@@ -2905,3 +2905,23 @@ table[data-v-63891a96] {
 .mobile#skipbutton[data-v-63891a96] {
     margin-bottom: 0
 }
+/* Compact portrait beneath the About title */
+.about-portrait { display: block; width: 84px; height: 112px; margin-top: 10px; object-fit: cover; object-position: center 25%; border: 1px solid #f03; }
+@media (max-width: 1200px) { .mobile .about-portrait { width: 58px; height: 78px; margin-top: 6px; } }
+
+/* Large portrait layered behind the MSKZ title */
+.title-container { isolation: isolate; }
+.about-portrait { position: absolute; z-index: 0; top: 72px; left: 28px; width: 260px; height: 340px; object-fit: cover; object-position: center 24%; opacity: .72; pointer-events: none; }
+.big-title { position: relative; z-index: 1; }
+@media (max-width: 1200px) { .mobile .about-portrait { top: 42px; left: 14px; width: 190px; height: 250px; } }
+
+.stack-block { margin-top: 26px; }
+.stack-icons { display: flex; flex-wrap: wrap; gap: 9px; }
+.stack-icon { width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #f03; color: #f03; font: 600 12px/1 sans-serif; letter-spacing: -.3px; }
+.stack-icon:nth-child(2), .stack-icon:nth-child(6) { width: 48px; }
+.stack-cta { margin-top: 18px; text-align: left; font-size: 16px; line-height: 21px; }
+@media (max-width: 780px) { .stack-block { margin-top: 20px; } .stack-icons { justify-content: center; gap: 7px; } .stack-icon { width: 34px; height: 34px; font-size: 10px; } .stack-icon:nth-child(2), .stack-icon:nth-child(6) { width: 40px; } .stack-cta { margin-top: 14px; text-align: center; font-size: 14px; line-height: 18px; } }
+
+.stack-icon-image { display: block; width: 50px; height: 50px; padding: 5px; object-fit: contain; border: 1px solid #444; background: #111; }
+@media (max-width: 780px) { .stack-icon-image { width: 38px; height: 38px; padding: 4px; } }
+
